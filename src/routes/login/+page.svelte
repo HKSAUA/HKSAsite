@@ -4,5 +4,5 @@
 </svelte:head>
 
 <div class="authentication">
-    <h1>HAHAHAHAHahahahah</h1>
+    <h1>IM LOSING IT HAHAHAHAHA</h1>
 </div>

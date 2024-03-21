@@ -18,11 +18,11 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		to borderline<br />plagiarism
 	</h1>
 
 	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
+		dont complain or i <strong>will</strong> perish
 	</h2>
 
 	<Counter />
