@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>Visit us on <a href="https://www.instagram.com/hksaua/">Instagram</a></p>
 	</footer>
 </div>
 
