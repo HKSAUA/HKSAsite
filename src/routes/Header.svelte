@@ -22,8 +22,8 @@
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/joinus' ? 'page' : undefined}>
-				<a href="/joinus">Join us</a>
+			<li aria-current={$page.url.pathname === '/join' ? 'page' : undefined}>
+				<a href="/join">Join us</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -32,8 +32,8 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
+		<a href="/login">
+			login
 		</a>
 	</div>
 </header>
