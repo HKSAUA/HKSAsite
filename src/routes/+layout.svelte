@@ -20,7 +20,10 @@
 	</main>
 
 	<footer>
-		<p>Visit us on <a href="https://www.instagram.com/hksaua/">Instagram</a></p>
+		<div class=".left">
+			<a href="https://www.instagram.com/hksaua/">Instagram</a>
+			<br/>
+		</div>
 	</footer>
 </div>
 
@@ -58,5 +61,11 @@
 		footer {
 			padding: 12px 0;
 		}
+	}
+	.left {
+		float: left;
+		width: 300px;
+		border: 3px solid #73AD21;
+		padding: 10px;
 	}
 </style>
