@@ -6,9 +6,7 @@
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
+
 	</div>
 
 	<nav>
@@ -22,6 +20,9 @@
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
+			<li aria-current={$page.url.pathname === '/events' ? 'page' : undefined}>
+				<a href="/events">Events</a>
+			</li>
 			<li aria-current={$page.url.pathname === '/join' ? 'page' : undefined}>
 				<a href="/join">Join us</a>
 			</li>
@@ -33,7 +34,7 @@
 
 	<div class="corner">
 		<a href="/login">
-			login
+			Login
 		</a>
 	</div>
 </header>
@@ -55,12 +56,6 @@
 		justify-content: center;
 		width: 100%;
 		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
 	}
 
 	nav {
