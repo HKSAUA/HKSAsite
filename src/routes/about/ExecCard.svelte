@@ -1,37 +1,33 @@
 <script>
-    import rmlo from "./assets/rmlo.png";
-    import {execinfo} from "./assets/execinfo.js";
-    function importPictureWTFFF(imgName) {
-        import {execPicture} from "./assets/"
-    }
+    import { execinfo } from "./execinfo.js";
+
+    const getImgPath = (ccid) => `/execAssets/${ccid}.png`;
+
 </script>
 
 <div>
-    {#each execinfo as exec}
-        <div class="row">
-            <div class="column">
-                <div class="card">
-
-                        <picture>
-                            <source srcset={"./assets/" + exec.ccid + ".png"} type="image/png"/>
-                            <img src={"./assets/" + exec.ccid + ".png"} alt={exec.name} style="width:100%"/>
-                        </picture>
-                        <div class="container">
-                            <h3>{exec.name}</h3>
-                            <p class="title">{exec.title}</p>
-                            <p>{exec.bio}</p>
-                        </div>
+    <div class="row">
+        {#each execinfo as exec}
+        <div class="column">
+            <div class="card">
+                    <picture>
+                        <source srcset={getImgPath(exec.ccid)} type="image/png"/>
+                        <img src={getImgPath(exec.ccid)} alt={exec.name} style="width:100%"/>
+                    </picture>
+                    <div class="container">
+                        <h3>{exec.name}</h3>
+                        <p class="title">{exec.title}</p>
+                        <p>{exec.bio}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    {/each}
+        {/each}
+    </div>
+
 </div>
 
 
 <style>
-    html {
-        box-sizing: border-box;
-    }
 
     *, *:before, *:after {
         box-sizing: inherit;
@@ -67,21 +63,5 @@
 
     .title {
         color: grey;
-    }
-
-    .button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #000;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-    }
-
-    .button:hover {
-        background-color: #555;
     }
 </style>

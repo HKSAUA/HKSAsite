@@ -1,7 +1,7 @@
 export const execinfo = [
     {
         ccid: "rmlo",
-        imgName: "/assets/rmlo.png",
+        imgName: "/execAssets/rmlo.png",
         name: "tall lanky ffxiv addict",
         title: "VP Operations",
         bio: "lorem ipsum something something i forgor the rest of the text"
@@ -13,3 +13,7 @@ export const execinfo = [
         bio: "sample text or something"
     }
 ];
+
+const imgPaths = [
+    './'
+]
