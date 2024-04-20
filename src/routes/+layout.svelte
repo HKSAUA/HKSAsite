@@ -20,9 +20,10 @@
 	</main>
 
 	<footer>
-		<div class=".left">
+		<div class="left">
 			<a href="https://www.instagram.com/hksaua/">Instagram</a>
-			<br/>
+			|
+			<a href="https://alberta.campuslabs.ca/engage/organization/hksaua">BearsDen</a>
 		</div>
 	</footer>
 </div>
@@ -62,7 +63,7 @@
 			padding: 12px 0;
 		}
 	}
-	.left {
+	left {
 		float: left;
 		width: 300px;
 		border: 3px solid #73AD21;

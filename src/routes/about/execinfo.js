@@ -13,7 +13,3 @@ export const execinfo = [
         bio: "sample text or something"
     }
 ];
-
-const imgPaths = [
-    './'
-]
