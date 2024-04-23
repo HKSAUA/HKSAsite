@@ -4,6 +4,7 @@
 	import { fade } from 'svelte/transition';
 
 	export let data;
+
 </script>
 
 
@@ -21,9 +22,10 @@
 
 	<footer>
 		<div class="left">
-			<a href="https://www.instagram.com/hksaua/">Instagram</a>
+			<a href="https://www.instagram.com/hksaua/" target="_blank">Instagram</a>
 			|
-			<a href="https://alberta.campuslabs.ca/engage/organization/hksaua">BearsDen</a>
+			<a href="https://alberta.campuslabs.ca/engage/organization/hksaua" target="_blank">BearsDen</a><br/>
+
 		</div>
 	</footer>
 </div>

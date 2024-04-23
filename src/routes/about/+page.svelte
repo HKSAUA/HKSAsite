@@ -3,9 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>About HKSAUA</title>
 	<meta name="description" content="About HKSA?" />
-
 
 </svelte:head>
 
