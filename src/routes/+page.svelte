@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>HKSAUA</title>
+	<title>HKSA</title>
 	<meta name="description" content="Hong Kong Students' Association" />
 </svelte:head>
 
@@ -18,11 +18,10 @@
 			</picture>
 		</span>
 
-		to borderline<br />plagiarism
+		<strong>Hong Kong Students' Association</strong><br />
 	</h1>
-
 	<h2>
-		dont complain or i <strong>will</strong> perish
+		University of <a href="https://www.ualberta.ca/toolkit/trademarks-licensing/student-groups.html" target="_blank">[redacted cuz trademark regulations lol]</a>
 	</h2>
 
 	<Counter />

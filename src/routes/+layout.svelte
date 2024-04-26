@@ -54,6 +54,7 @@
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
+		background-color: #1A1A1A;
 	}
 
 	footer a {
