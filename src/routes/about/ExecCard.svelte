@@ -9,7 +9,6 @@
         execs = resultExecs.items;
         console.log("SKREEEEEE", execs);
     })
-    //const getImgPath = (ccid) => `/execAssets/${ccid}.png`;
 
 </script>
 
