@@ -1,18 +1,26 @@
 <script>
-    import { execinfo } from "./execinfo.js";
+    import { onMount, onDestroy } from "svelte";
+    import { currentUser, pb } from "$lib/pocketbase.js";
 
-    const getImgPath = (ccid) => `/execAssets/${ccid}.png`;
+    let execs = [];
+
+    onMount(async () => {
+        const resultExecs = await pb.collection('executives').getList(1,50);
+        execs = resultExecs.items;
+        console.log("SKREEEEEE", execs);
+    })
+    //const getImgPath = (ccid) => `/execAssets/${ccid}.png`;
 
 </script>
 
 <div>
     <div class="row">
-        {#each execinfo as exec}
+        {#each execs as exec}
         <div class="column">
             <div class="card">
                     <picture>
-                        <source srcset={getImgPath(exec.ccid)} type="image/png"/>
-                        <img src={getImgPath(exec.ccid)} alt={exec.name} style="width:100%"/>
+                        <source srcset={"http://127.0.0.1:8090/api/files/executives/" + exec.id + "/" + exec.image} type="image/png"/>
+                        <img src={"http://127.0.0.1:8090/api/files/executives/" + exec.id + "/" + exec.image} alt={exec.name} style="width:100%"/>
                     </picture>
                     <div class="container">
                         <h3>{exec.name}</h3>
