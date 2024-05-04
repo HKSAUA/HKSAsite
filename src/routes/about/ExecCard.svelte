@@ -1,8 +1,7 @@
 <script>
     import { onMount, onDestroy } from "svelte";
-
+    import { currentUser, pb } from "$lib/pocketbase.js";
     let execs = [];
-
     onMount(async () => {
         const resultExecs = await pb.collection('executives').getList(1,50);
         execs = resultExecs.items;
