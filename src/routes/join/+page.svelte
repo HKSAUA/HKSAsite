@@ -1,19 +1,13 @@
+<script>
+    import Signup from "./Signup.svelte";
+</script>
+
 <svelte:head>
     <title>Join us</title>
     <meta name="description" content="Join us" />
 </svelte:head>
 <body>
-    <div class="authentication">
-        <h1>become a member</h1>
-        <p>or don't. i havent automated that yet lol <br>not that you can cuz yknow i haven't connected that to the db yet ;-;</p>
-
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
-        </form>
-    </div>
+    <Signup/>
     <div class="usageDisclosure">
         <div>
             <h3>Why do we need this info?</h3>
