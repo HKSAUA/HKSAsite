@@ -25,12 +25,12 @@
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
 		"svelte": "^4.2.7",
+		"svelte-carousel": "^1.0.25",
 		"vite": "^5.0.3",
 		"vitest": "^1.2.0"
 	},
 	"type": "module",
 	"dependencies": {
-		"pocketbase": "^0.21.2",
-		"svelte-carousel": "^1.0.25"
+		"pocketbase": "^0.21.2"
 	}
 }
