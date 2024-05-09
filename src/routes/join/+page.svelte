@@ -34,5 +34,5 @@
             </div>
         </div>
     </Modal>
-
+    <button on:click={() => (showModal = true)}><strong>Why do we need this info?</strong></button>
 </body>
