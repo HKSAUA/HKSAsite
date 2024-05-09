@@ -1,5 +1,6 @@
 <script>
 	import Header from './Header.svelte';
+	import Footer from './Footer.svelte';
 	import './styles.css';
 	import { fade } from 'svelte/transition';
 
@@ -20,14 +21,7 @@
 		{/key}
 	</main>
 
-	<footer>
-		<div class="left">
-			<a href="https://www.instagram.com/hksaua/" target="_blank">Instagram</a>
-			|
-			<a href="https://alberta.campuslabs.ca/engage/organization/hksaua" target="_blank">BearsDen</a><br/>
-
-		</div>
-	</footer>
+	<Footer />
 </div>
 
 <style>
@@ -48,28 +42,4 @@
 		box-sizing: border-box;
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-		background-color: #1A1A1A;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-	left {
-		float: left;
-		width: 300px;
-		border: 3px solid #73AD21;
-		padding: 10px;
-	}
 </style>

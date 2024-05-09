@@ -24,7 +24,7 @@
 		University of <a href="https://www.ualberta.ca/toolkit/trademarks-licensing/student-groups.html" target="_blank">[redacted cuz trademark regulations lol]</a>
 	</h2>
 
-	<Counter />
+	<!--<Counter />-->
 </section>
 
 <style>
