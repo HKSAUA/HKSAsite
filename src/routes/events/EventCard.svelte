@@ -21,15 +21,17 @@
                 <div id="imgContent" class="center">
                     <Carousel>
                         {#each event.images as image}
-                            <picture>
-                                <source
-                                    srcset={"http://127.0.0.1:8090/api/files/events/" + event.id + "/" + image}
-                                    type = "image/png"/>
-                                <img
-                                    src={"http://127.0.0.1:8090/api/files/events/" + image}
-                                    alt={image}
-                                    style="width:50%">
-                            </picture>
+                            <div class="eventMedia">
+                                <picture>
+                                    <source
+                                            srcset={"http://127.0.0.1:8090/api/files/events/" + event.id + "/" + image}
+                                            type = "image/png"/>
+                                    <img
+                                            src={"http://127.0.0.1:8090/api/files/events/" + image}
+                                            alt={image}
+                                            style="width:50%">
+                                </picture>
+                            </div>
                         {/each}
                     </Carousel>
                 </div>
@@ -39,6 +41,7 @@
                     <p>Description<br>{event.description}</p>
                 </div>
             </div>
+            <br>
         {/each}
     </div>
 </div>
@@ -52,12 +55,12 @@
         height:100%;
         width: 100%;
         font-size: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
     #imgContent {
         display: inline-block;
         *display: inline;
         zoom: 1;
-        vertical-align: top;
         width:50%;
         font-size: 0px;
     }
@@ -68,6 +71,14 @@
         vertical-align: top;
         width:50%;
         font-size: 16px;
+    }
+    .eventMedia {
+        margin: 12px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     .center {
         margin-left: auto;
