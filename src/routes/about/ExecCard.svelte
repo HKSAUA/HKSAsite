@@ -16,8 +16,13 @@
         <div class="column">
             <div class="card">
                     <picture>
-                        <source srcset={"http://127.0.0.1:8090/api/files/executives/" + exec.id + "/" + exec.image} type="image/png"/>
-                        <img src={"http://127.0.0.1:8090/api/files/executives/" + exec.id + "/" + exec.image} alt={exec.name} style="width:100%"/>
+                        <source
+                            srcset={"http://127.0.0.1:8090/api/files/executives/" + exec.id + "/" + exec.image}
+                            type="image/png"/>
+                        <img
+                            src={"http://127.0.0.1:8090/api/files/executives/" + exec.id + "/" + exec.image}
+                            alt={exec.name}
+                            style="width:100%"/>
                     </picture>
                     <div class="container">
                         <h3>{exec.name}</h3>
