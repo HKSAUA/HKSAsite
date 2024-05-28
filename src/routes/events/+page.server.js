@@ -6,11 +6,16 @@ export const actions = {
         console.log("request fired")
         const response = await fetch("https://www.eventbriteapi.com/v3/users/me/organizations/", {
             method: "GET",
+
             headers: {
-                "Authorization": 'Bearer A7TY3LKNC7EKJGFEY2FY3FGLSPWFEPKXMZEZZIIWFYC35WU2H2',
+                "Content-Type": "application/json",
+                "Authorization": `Bearer [PRIVATE TOKEN]`
             },
 
+        }).then((response) => {
+            response.json().then((jsondFile) => {
+                console.log(jsondFile);
+            });
         })
-        console.log("aaaaaaaaaaaaaa", response, process.env.eventbrite_key)
     }
 };

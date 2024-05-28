@@ -17,10 +17,10 @@
             <div class="card">
                     <picture>
                         <source
-                            srcset={"http://127.0.0.1:8090/api/files/executives/" + exec.id + "/" + exec.image}
+                            srcset={"https://hksa-site.pockethost.io/api/files/executives/" + exec.id + "/" + exec.image}
                             type="image/png"/>
                         <img
-                            src={"http://127.0.0.1:8090/api/files/executives/" + exec.id + "/" + exec.image}
+                            src={"https://hksa-site.pockethost.io/api/files/executives/" + exec.id + "/" + exec.image}
                             alt={exec.name}
                             style="width:100%"/>
                     </picture>
