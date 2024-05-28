@@ -12,6 +12,7 @@
         allEvents = grabbedEvents.items;
         console.log("Events loaded", allEvents);
     })
+
 </script>
 
 <div>
@@ -39,6 +40,10 @@
                     <h1>{event.name}</h1><br>
                     <h3>When: {event.date}</h3>
                     <p>Description<br>{event.description}</p>
+                    <form method="POST" action="?/eventbriteAuth">
+                        <button >HELP ME</button>
+                    </form>
+
                 </div>
             </div>
             <br>
