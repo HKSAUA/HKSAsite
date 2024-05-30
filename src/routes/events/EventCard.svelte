@@ -24,10 +24,10 @@
                             <div class="eventMedia">
                                 <picture>
                                     <source
-                                            srcset={"http://127.0.0.1:8090/api/files/events/" + event.id + "/" + image}
+                                            srcset={"https://hksa-site.pockethost.io/api/files/events/" + event.id + "/" + image}
                                             type = "image/png"/>
                                     <img
-                                            src={"http://127.0.0.1:8090/api/files/events/" + image}
+                                            src={"https://hksa-site.pockethost.io/api/files/events/" + image}
                                             alt={image}
                                             style="width:50%">
                                 </picture>
