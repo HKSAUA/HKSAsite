@@ -41,7 +41,7 @@
                     <h3>When: {event.date}</h3>
                     <p>Description<br>{event.description}</p>
                     <form method="POST" action="?/eventbriteAuth">
-                        <button >HELP ME</button>
+                        <button >WHY IS NOTHING WORKING AAAAAAA</button>
                     </form>
 
                 </div>
