@@ -20,10 +20,12 @@
 
 		<strong>Hong Kong Students' Association</strong><br />
 	</h1>
-	<h2>
+	<h3>
 		University of <a href="https://www.ualberta.ca/toolkit/trademarks-licensing/student-groups.html" target="_blank">[redacted cuz trademark regulations lol]</a>
-	</h2>
-
+	</h3>
+	<p>This page isn't ready yet, but we're cooking, we promise!</p><br>
+	<p>In the meantime, visit us on <a href="https://www.instagram.com/hksaua/">Instagram</a>
+	or <a href="https://alberta.campuslabs.ca/engage/organization/hksaua">BearsDen</a>!</p>
 	<!--<Counter />-->
 </section>
 

@@ -1,5 +1,6 @@
 <script>
     import EventCard from "./EventCard.svelte";
+
 </script>
 
 <svelte:head>
