@@ -1,5 +1,7 @@
 <script>
     import EventCard from "./EventCard.svelte";
+    import Preview from "../Preview.svelte";
+    import {currentUser} from "$lib/pocketbase.js";
 
 </script>
 
@@ -9,10 +11,12 @@
 </svelte:head>
 
 <body>
+
     <div>
         <h1>Events</h1>
-        <p>this whole thing is wip gimme a break smh</p>
     </div>
-
+    {#if $currentUser}
     <EventCard />
+    {/if}
+<Preview/>
 </body>

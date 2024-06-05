@@ -3,6 +3,7 @@
 	import Footer from './Footer.svelte';
 	import './styles.css';
 	import { fade } from 'svelte/transition';
+	import Preview from "./Preview.svelte";
 
 	export let data;
 

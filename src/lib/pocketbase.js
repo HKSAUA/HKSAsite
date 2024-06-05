@@ -5,7 +5,7 @@ import { writable } from "svelte/store";
 
 
 // I don't have an IP yet because I don't wanna pay or deploy yet lol
-const url = 'https://hksa-site.pockethost.io/'
+const url = 'https://NOPE.pockethost.io/'
 export const pb = new PocketBase(url);
 
 // currentUser = null when not logged in, = database record when logged in
