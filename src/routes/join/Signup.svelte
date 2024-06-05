@@ -5,7 +5,8 @@
     let lastName;
     let email;
     let status;
-    let password = "lmaobrouwotmateheheheha!"
+    let password;
+    let statusMessage = "";
 
     async function signUp() {
         try {
@@ -22,6 +23,7 @@
 
         } catch (error) {
             console.log(error);
+            statusMessage = error;
         }
         console.log("User", firstName, lastName, "created")
     }
@@ -39,7 +41,7 @@
                     placeholder="First Name"
                     type="text"
                     bind:value={firstName}
-            /><br>
+            />
             <input
                     placeholder="Last Name"
                     type="text"
@@ -50,6 +52,11 @@
                     type="text"
                     bind:value={email}
             /><br>
+            <input
+                placeholder="Password"
+                type="password"
+                bind:value={password}
+            />
             <label for="status">Status</label>
             <select
                 bind:value={status}>
@@ -61,5 +68,5 @@
         </form>
         <button on:click={signUp}>Sign up</button>
     {/if}
-
+    { statusMessage }
 </div>
