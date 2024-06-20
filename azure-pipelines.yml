@@ -5,6 +5,7 @@
 
 trigger:
 - main
+- releases/*
 
 pool:
   vmImage: ubuntu-latest
@@ -16,6 +17,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
+    npm install -g bun
     npm run build
   displayName: 'npm install and build'
