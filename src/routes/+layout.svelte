@@ -3,7 +3,6 @@
 	import Footer from './Footer.svelte';
 	import './styles.css';
 	import { fade } from 'svelte/transition';
-	import Preview from "./Preview.svelte";
 
 	export let data;
 
@@ -11,6 +10,7 @@
 
 
 <div class="app">
+	
 
 	<main>
 		{#key data.pathname}
@@ -20,6 +20,7 @@
 		{/key}
 	</main>
 
+	<Footer />
 </div>
 
 <style>
