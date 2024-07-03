@@ -19,6 +19,5 @@ pool:
 steps:
 - script: |
     npm install
-    npm install bun
-    bun run build
+    npm run build
   displayName: 'Install and build'
