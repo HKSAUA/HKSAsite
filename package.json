@@ -34,4 +34,6 @@
   "dependencies": {
     "pocketbase": "^0.21.2"
   }
+  "engines":
+    "node": ">=18.13"
 }
