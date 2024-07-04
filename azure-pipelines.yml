@@ -20,5 +20,5 @@ steps:
 - script: |
     npm install
     npm run build
-    git push https://hksaua@dev.azure.com/hksaua/HKSAsite/_git/HKSAsite
+    git push https://hksaua@dev.azure.com/hksaua/HKSAsite/_git/HKSAsite HEAD:main
   displayName: 'Install and build'
