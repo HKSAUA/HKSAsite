@@ -21,21 +21,3 @@ steps:
     npm install
     npm run build
   displayName: 'Install and build'
-
-- checkout: self
-  persistCredentials: true
-  fetchDepth: 0
-
-- bash: |
-    echo "This Is Build $(Build.BuildId)" > "$(Build.SourcesDirectory)/BuildNumber"
-  displayName: Create File
-
-- bash: |
-    git config user.name "ShiNLea"
-    git config user.email "leafshinobi319@gmail.com"
-
-    git checkout main --
-    git add --all
-    git commit -m "Adding Build File"
-    git push origin main
-  displayName: Git Commit
