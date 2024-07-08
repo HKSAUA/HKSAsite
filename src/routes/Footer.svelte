@@ -15,6 +15,7 @@
         align-items: center;
         padding: 12px;
         background-color: #242424;
+
     }
 
     footer a {

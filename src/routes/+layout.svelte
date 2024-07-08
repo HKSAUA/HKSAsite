@@ -11,7 +11,6 @@
 
 <div class="app">
 
-	<Header />
 
 	<main>
 		{#key data.pathname}

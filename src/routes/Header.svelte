@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { currentUser } from '$lib/pocketbase.js'
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
 </script>
@@ -33,9 +34,15 @@
 	</nav>
 
 	<div class="corner">
-		<a href="/login">
-			Login
-		</a>
+		{#if $currentUser }
+			<div>
+				Signed in as { currentUser.firstname }
+			</div>
+		{:else}
+			<a href="/login">
+				Login
+			</a>
+		{/if}
 	</div>
 </header>
 

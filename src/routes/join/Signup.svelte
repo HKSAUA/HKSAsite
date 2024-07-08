@@ -6,6 +6,7 @@
     let email;
     let status;
     let password;
+    let passwordConfirm;
     let statusMessage = "";
 
     async function signUp() {
@@ -16,7 +17,7 @@
                 email,
                 status,
                 password,
-                passwordConfirm: password,
+                passwordConfirm,
 
             };
             const createMember = await pb.collection("members").create(data);
@@ -56,6 +57,11 @@
                 placeholder="Password"
                 type="password"
                 bind:value={password}
+            />
+            <input
+                    placeholder="Confirm password"
+                    type="password"
+                    bind:value={passwordConfirm}
             />
             <label for="status">Status</label>
             <select

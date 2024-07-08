@@ -1,6 +1,8 @@
 <script>
     import Signup from "./Signup.svelte";
     import Modal from "$lib/Modal.svelte";
+    import {currentUser} from "$lib/pocketbase.js";
+    import Preview from "../Preview.svelte";
 
     let showModal = false;
 </script>
@@ -10,6 +12,8 @@
     <meta name="description" content="Join us" />
 </svelte:head>
 <body>
+<h1>Join us!</h1>
+{#if $currentUser}
     <Signup/>
     <Modal bind:showModal>
         <div class="usageDisclosure">
@@ -35,4 +39,7 @@
         </div>
     </Modal>
     <button on:click={() => (showModal = true)}><strong>Why do we need this info?</strong></button>
+    <p>Already a member? <a href="/join">Join us here!</a></p>
+{/if}
+<Preview/>
 </body>
