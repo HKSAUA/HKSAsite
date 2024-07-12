@@ -57,7 +57,11 @@
 		width: 100%;
 		height: 100%;
 	}
-
+	.corner img {
+		width: 8em;
+		height: 8em;
+		object-fit: fill;
+	}
 	nav {
 		display: flex;
 		justify-content: center;
