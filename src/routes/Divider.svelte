@@ -1,0 +1,26 @@
+<script>
+    let fontSize = 20; // Adjust initial font size
+
+    const updateFontSize = () => {
+        const width = window.innerWidth;
+        // Define logic to adjust font size based on width (e.g., increase for wider screens)
+        fontSize = Math.min(width / 10, 30); // Adjust calculation as needed
+    };
+
+    window.addEventListener('resize', updateFontSize);
+</script>
+
+<style>
+    :global(.section-divider) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem; /* Adjust height as needed */
+        background-color: #ffd700;
+    }
+
+</style>
+
+<div class="section-divider">
+    <span style="font-size: {fontSize}px; color: #ffd700;">This is the repeating text</span>
+</div>

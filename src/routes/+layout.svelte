@@ -3,6 +3,7 @@
 	import Footer from './Footer.svelte';
 	import './styles.css';
 	import { fade } from 'svelte/transition';
+	import Divider from "./Divider.svelte";
 
 	export let data;
 
@@ -12,7 +13,6 @@
 <div class="app">
 
 	<Header />
-	<Header />
 	<main>
 		{#key data.pathname}
 			<div in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
@@ -20,6 +20,7 @@
 			</div>
 		{/key}
 	</main>
+	<Divider />
 
 	<Footer />
 </div>
