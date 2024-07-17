@@ -11,17 +11,10 @@
 
 <section>
 	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		<strong>Hong Kong Students' Association</strong><br />
+		<strong>HKSAUA</strong><br />
 	</h1>
 	<h2>
-		University of <a href="https://www.ualberta.ca/toolkit/trademarks-licensing/student-groups.html" target="_blank">[redacted cuz trademark regulations lol]</a>
+		Hong Kong Students' Association
 	</h2>
 
 	<!--<Counter />-->
