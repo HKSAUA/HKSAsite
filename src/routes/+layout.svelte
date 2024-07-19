@@ -20,7 +20,7 @@
 			</div>
 		{/key}
 	</main>
-	<Divider />
+
 
 	<Footer />
 </div>
