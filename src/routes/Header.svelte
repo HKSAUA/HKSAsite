@@ -32,6 +32,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		background-color: #FFFFFF
 	}
 
 	.corner {

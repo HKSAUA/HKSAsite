@@ -20,7 +20,7 @@
 
 
 	<h1>
-		<strong>HKSAUA</strong><br />
+		<span style="font-size: { frontHeaderFont }px"><strong>HKSAUA</strong></span><br />
 	</h1>
 	<h2><strong>Hong Kong Students' Association</strong></h2>
 
@@ -35,10 +35,6 @@
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
-	}
-
-	h1 {
-		font-size: 350px;
 	}
 
 	.welcome {
