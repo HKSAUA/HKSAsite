@@ -1,13 +1,15 @@
 <script>
 	import { page } from '$app/stores';
 	import { currentUser } from '$lib/pocketbase.js'
-	import logo from '$lib/images/svelte-logo.svg';
+	import logo from '$lib/images/HKSA-logo.png';
 	import github from '$lib/images/github.svg';
 </script>
 
 <header>
 	<div class="corner">
-
+		<a href="/">
+			<img src={logo} alt="Home"/>
+		</a>
 	</div>
 
 	<nav>

@@ -31,6 +31,11 @@
 
 	</div>
 	<!--<Counter />-->
+	<div class="biggerNav" style="background-color: #cc3c29">
+		<div class="row">
+			help
+		</div>
+	</div>
 </section>
 
 <style>
