@@ -1,8 +1,16 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/helpme.webp';
-	import welcome_fallback from '$lib/images/helpme.png';
+	import './styles.css';
 	import Divider from "./Divider.svelte";
+	import { onMount } from "svelte";
+	import FrontJoin from "./FrontJoin.svelte";
+
+	let frontHeaderFont = 350;
+	onMount(() => {
+		const updateFontSize = () => {
+			const width = window.innerWidth;
+			frontHeaderFont = Math.min(width / 10, 30);
+		}
+	})
 </script>
 
 <svelte:head>
@@ -10,17 +18,16 @@
 	<meta name="description" content="Hong Kong Students' Association" />
 </svelte:head>
 
-<section>
+
 	<h1>
 		<strong>HKSAUA</strong><br />
 	</h1>
-	<h2>
-		Hong Kong Students' Association
-	</h2>
+	<h2><strong>Hong Kong Students' Association</strong></h2>
 
 	<!--<Counter />-->
-</section>
+
 <Divider />
+<FrontJoin />
 <style>
 	section {
 		display: flex;
@@ -31,7 +38,7 @@
 	}
 
 	h1 {
-		width: 100%;
+		font-size: 350px;
 	}
 
 	.welcome {

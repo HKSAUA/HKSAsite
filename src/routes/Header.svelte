@@ -1,8 +1,7 @@
 <script>
 	import { page } from '$app/stores';
-	import { currentUser } from '$lib/pocketbase.js'
 	import logo from '$lib/images/HKSA-logo.png';
-	import github from '$lib/images/github.svg';
+
 </script>
 
 <header>
@@ -54,10 +53,13 @@
 		--background: rgba(255, 255, 255, 0.7);
 	}
 
-	svg {
-		width: 2em;
-		height: 3em;
+	img {
+		width: 10em;
+		height: 10em;
 		display: block;
+		position: fixed;
+		top: 10px;
+		left: 10px
 	}
 
 	path {
@@ -101,7 +103,7 @@
 		padding: 0 0.5rem;
 		color: var(--color-text);
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 24px;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
