@@ -29,8 +29,15 @@
 </header>
 
 <style>
-	@import url("https://cdn.discordapp.com/attachments/742574117735235644/1127126313501732944/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf");
-
+	@font-face {
+		font-family: "Integral CF Regular";
+		src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot");
+		src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
+	}
 	header {
 		display: flex;
 		justify-content: space-between;

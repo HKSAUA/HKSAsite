@@ -31,5 +31,5 @@
 </style>
 
 <div class="section-divider">
-    <span style="font-size: {fontSize}px; color: #0F3446;"><strong>This is the repeating text</strong></span>
+    <span style="font-size: {fontSize}px; color: #0F3446;"><strong>HKSAUA</strong></span>
 </div>

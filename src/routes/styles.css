@@ -72,7 +72,8 @@ button:focus:not(:focus-visible) {
 	}
 }
 .with-image {
-	background-image: url("$lib/images/bkg.jpg")
+	background-image: url("$lib/images/bkg.jpg");
+	padding: 50px;
 }
 .visually-hidden {
 	border: 0;
