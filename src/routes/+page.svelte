@@ -27,14 +27,14 @@
 	<h2><strong>Hong Kong Students' Association</strong></h2>
 
 	<!--<Counter />-->
-<FrontJoin />
+
 <style>
 	section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 0.6;
+		flex: 1;
 	}
 
 </style>

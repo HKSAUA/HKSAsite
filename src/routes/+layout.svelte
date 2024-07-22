@@ -4,6 +4,7 @@
 	import './styles.css';
 	import { fade } from 'svelte/transition';
 	import Divider from "./Divider.svelte";
+	import FrontJoin from './FrontJoin.svelte';
 
 	export let data;
 
@@ -26,7 +27,7 @@
 			</div>
 				
 			<Divider />
-
+			<FrontJoin />
 			
 		</main>
 		
@@ -48,7 +49,7 @@
 		
 
 		width: 100%;
-		
+		text-align: center;
 		margin: 0 auto;
 
 	}
@@ -56,7 +57,7 @@
 	.has-words {
 		max-width: 64rem;
 		display: flex;
-		text-align: center;
+		margin: 0 auto;
 		justify-content: center;
 		align-items: center;
 		vertical-align: middle;

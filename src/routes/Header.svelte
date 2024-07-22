@@ -29,10 +29,13 @@
 </header>
 
 <style>
+	@import url("https://cdn.discordapp.com/attachments/742574117735235644/1127126313501732944/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf");
+
 	header {
 		display: flex;
 		justify-content: space-between;
-		background-color: #FFFFFF
+		background-color: #FFFFFF;
+		font-family: "Integral CF Regular"
 	}
 
 	.corner {
