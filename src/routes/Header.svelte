@@ -40,7 +40,7 @@
 			</div>
 		{:else}
 			<a href="/login">
-				Login
+				Log in
 			</a>
 		{/if}
 	</div>
