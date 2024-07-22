@@ -13,15 +13,26 @@
 <div class="app">
 
 	<Header />
-	<main>
-		{#key data.pathname}
-			<div in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
-				<slot />
+	<div>
+		<main>
+			<div class="has-words">
+				{#key data.pathname}
+				<div in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
+					<slot />
+					
+				</div>
+				
+				{/key}
 			</div>
-		{/key}
-	</main>
+				
+			<Divider />
 
-
+			
+		</main>
+		
+	</div>
+	
+	
 	<Footer />
 </div>
 
@@ -34,13 +45,21 @@
 
 	main {
 		flex: 1;
-		display: flex;
-
+		
 
 		width: 100%;
-		max-width: 64rem;
+		
 		margin: 0 auto;
 
+	}
+
+	.has-words {
+		max-width: 64rem;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		vertical-align: middle;
 	}
 
 </style>

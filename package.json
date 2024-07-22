@@ -33,6 +33,7 @@
   "dependencies": {
     "@vercel/postgres": "^0.9.0",
     "pocketbase": "^0.21.2",
+    "svelte-adapter-azure-swa": "^0.20.1",
     "vercel": "^32.3.0"
   }
 }

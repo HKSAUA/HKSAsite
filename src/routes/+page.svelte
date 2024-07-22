@@ -8,8 +8,10 @@
 	onMount(() => {
 		const updateFontSize = () => {
 			const width = window.innerWidth;
-			frontHeaderFont = Math.min(width / 10, 30);
+			frontHeaderFont = Math.min(width / 10, 350);
 		}
+		window.addEventListener('resize', updateFontSize())
+		updateFontSize()
 	})
 </script>
 
@@ -18,15 +20,13 @@
 	<meta name="description" content="Hong Kong Students' Association" />
 </svelte:head>
 
-
+<section></section>
 	<h1>
 		<span style="font-size: { frontHeaderFont }px"><strong>HKSAUA</strong></span><br />
 	</h1>
 	<h2><strong>Hong Kong Students' Association</strong></h2>
 
 	<!--<Counter />-->
-
-<Divider />
 <FrontJoin />
 <style>
 	section {

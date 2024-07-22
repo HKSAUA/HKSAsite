@@ -30,11 +30,12 @@ h1 {
 	text-align: center;
 	color: #0F3446;
 	font-family: 'Kelsi 1', sans-serif;
-
+	text-align: center;
 }
 
 h2 {
 	font-size: 36px;
+	text-align: center;
 }
 
 pre {
