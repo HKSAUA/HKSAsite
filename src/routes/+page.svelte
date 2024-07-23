@@ -20,21 +20,26 @@
 	<meta name="description" content="Hong Kong Students' Association" />
 </svelte:head>
 
-<section></section>
-	<h1>
-		<span style="font-size: { frontHeaderFont }px"><strong>HKSAUA</strong></span><br />
-	</h1>
-	<h2><strong>Hong Kong Students' Association</strong></h2>
 
+
+	<section><h1>
+		<span style="font-size: { frontHeaderFont }px">HKSAUA</span><br />
+	</h1></section>
+	<section>
+		<h2><strong>Hong Kong Students' Association</strong></h2>
+	</section>
 	<!--<Counter />-->
+	<section><Divider /></section>
 
+<FrontJoin />
 <style>
 	section {
 		display: flex;
-		flex-direction: column;
+
 		justify-content: center;
 		align-items: center;
 		flex: 1;
+		margin: 0 auto;
 	}
 
 </style>

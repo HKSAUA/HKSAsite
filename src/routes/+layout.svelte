@@ -16,23 +16,18 @@
 	<Header />
 	<div>
 		<main>
+		
+			{#key data.pathname}
 			<div class="has-words">
-				{#key data.pathname}
 				<div in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
 					<slot />
 					
 				</div>
-				
-				{/key}
 			</div>
-				
-			<Divider />
-			<FrontJoin />
 			
-		</main>
-		
+			{/key}
+		</main>		
 	</div>
-	
 	
 	<Footer />
 </div>

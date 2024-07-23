@@ -15,7 +15,7 @@
         justify-content: center;
         align-items: center;
         padding: 12px;
-        background-color: #242424;
+        background-color: #E6AD37;
         text-align: center;
         bottom: 0;
     }

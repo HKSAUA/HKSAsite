@@ -28,7 +28,7 @@
 </script>
 
 <div class="Signup">
-    <h1>become a member</h1>
+    <h2>become a member</h2>
     <p>you actually can now <br>it actually works with db now holy hell</p>
 
     {#if $currentUser}

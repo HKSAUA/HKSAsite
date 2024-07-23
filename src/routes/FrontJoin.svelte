@@ -3,7 +3,7 @@
 </script>
 
 <div class="with-image">
-    <div style="text-align: center; color: #FFFFFF; font-size: 36px">
+    <div style="text-align: center; color: #FFFFFF; font-size: 36px; font-family: 'Integral CF Regular';">
         <strong>JOIN US</strong><br>
     </div>
     
@@ -22,6 +22,7 @@
     h2 {
         text-align: center;
         color: #FFFFFF;
+        
     }
 
 </style>
