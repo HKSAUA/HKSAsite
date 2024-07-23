@@ -13,6 +13,8 @@
 		window.addEventListener('resize', updateFontSize())
 		updateFontSize()
 	})
+
+	export let data;
 </script>
 
 <svelte:head>
