@@ -19,6 +19,7 @@ jobs:
         with:
           submodules: true
           lfs: false
+        env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       - name: Build And Deploy
