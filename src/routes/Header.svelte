@@ -1,8 +1,7 @@
 <script>
 	import { page } from '$app/stores';
-	import { currentUser } from '$lib/pocketbase.js'
 	import logo from '$lib/images/HKSA-logo.png';
-	import github from '$lib/images/github.svg';
+
 </script>
 
 <header>
@@ -13,45 +12,37 @@
 	</div>
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li aria-current={$page.url.pathname === '/join' ? 'page' : undefined}>
+				<a href="/join">Join us</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/events' ? 'page' : undefined}>
 				<a href="/events">Events</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/join' ? 'page' : undefined}>
-				<a href="/join">Join us</a>
+			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+				<a href="/about">About</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
+
 	</nav>
 
-	<div class="corner">
-		{#if $currentUser }
-			<div>
-				Signed in as { currentUser.firstname }
-			</div>
-		{:else}
-			<a href="/login">
-				Login
-			</a>
-		{/if}
-	</div>
 </header>
 
 <style>
+	@font-face {
+		font-family: "Integral CF Regular";
+		src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot");
+		src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot?#iefix")format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2")format("woff2"),
+		url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff")format("woff"),
+		url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
+		url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
+	}
 	header {
 		display: flex;
 		justify-content: space-between;
+		background-color: #FFFFFF;
+		font-family: "Integral CF Regular"
 	}
 
 	.corner {
@@ -73,10 +64,13 @@
 		--background: rgba(255, 255, 255, 0.7);
 	}
 
-	svg {
-		width: 2em;
-		height: 3em;
+	img {
+		width: 10em;
+		height: 10em;
 		display: block;
+		position: fixed;
+		top: 10px;
+		left: 10px
 	}
 
 	path {
@@ -120,7 +114,7 @@
 		padding: 0 0.5rem;
 		color: var(--color-text);
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 24px;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;

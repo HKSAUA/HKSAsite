@@ -1,36 +1,20 @@
 @import '@fontsource/fira-mono';
-
-:root {
-	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(228, 216, 228);
-	--color-bg-1: hsl(344, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #cc3c29;
-	--color-theme-2: #4075a6;
-	--color-text: rgba(0, 0, 0, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
-	font-family: var(--font-body);
-	color: var(--color-text);
+@import url('https://fonts.cdnfonts.com/css/kelsi');
+@font-face {
+	font-family: "Integral CF Regular";
+	src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot");
+	src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot?#iefix")format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2")format("woff2"),
+	url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff")format("woff"),
+	url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
+	url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
 }
-
 body {
 	min-height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--color-bg-2);
-	background-size: 100vw 100vh;
-	background-image: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(255, 255, 255, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
 }
 
-h1,
 h2,
 p {
 	font-weight: 400;
@@ -41,7 +25,7 @@ p {
 }
 
 a {
-	color: var(--color-theme-1);
+	color: #0F3446;
 	text-decoration: none;
 }
 
@@ -50,23 +34,25 @@ a:hover {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 350px;
+	text-align: center;
+	color: #0F3446;
+	font-family: 'Kelsi 1', sans-serif;
 	text-align: center;
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 36px;
+	text-align: center;
 }
 
 pre {
 	font-size: 16px;
-	font-family: var(--font-mono);
 	background-color: rgba(255, 255, 255, 0.45);
 	border-radius: 3px;
 	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
 	padding: 0.5em;
 	overflow-x: auto;
-	color: var(--color-text);
 }
 
 .text-column {
@@ -93,7 +79,10 @@ button:focus:not(:focus-visible) {
 		font-size: 2.4rem;
 	}
 }
-
+.with-image {
+	background-image: url("$lib/images/bkg.jpg");
+	padding: 50px;
+}
 .visually-hidden {
 	border: 0;
 	clip: rect(0 0 0 0);

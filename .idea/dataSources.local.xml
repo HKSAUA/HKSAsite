@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="DB-241.17890.24">
+    <data-source name="hksasite-db@hksaua.database.windows.net" uuid="74daafe2-bc1f-414f-b939-7f807bdcf5d0">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MSSQL" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>hksaua@hksaua</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

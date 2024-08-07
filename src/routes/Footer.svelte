@@ -1,4 +1,5 @@
 <footer>
+
     <div class="left">
         <a href="https://www.instagram.com/hksaua/" target="_blank">Instagram</a>
         |
@@ -14,8 +15,9 @@
         justify-content: center;
         align-items: center;
         padding: 12px;
-        background-color: #242424;
-
+        background-color: #E6AD37;
+        text-align: center;
+        bottom: 0;
     }
 
     footer a {

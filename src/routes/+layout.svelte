@@ -3,6 +3,8 @@
 	import Footer from './Footer.svelte';
 	import './styles.css';
 	import { fade } from 'svelte/transition';
+	import Divider from "./Divider.svelte";
+	import FrontJoin from './FrontJoin.svelte';
 
 	export let data;
 
@@ -11,15 +13,22 @@
 
 <div class="app">
 
-
-	<main>
-		{#key data.pathname}
-			<div in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
-				<slot />
+	<Header />
+	<div>
+		<main>
+		
+			{#key data.pathname}
+			<div class="has-words">
+				<div in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
+					<slot />
+					
+				</div>
 			</div>
-		{/key}
-	</main>
-
+			
+			{/key}
+		</main>		
+	</div>
+	
 	<Footer />
 </div>
 
@@ -32,13 +41,21 @@
 
 	main {
 		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
+		
+
 		width: 100%;
-		max-width: 64rem;
+		text-align: center;
 		margin: 0 auto;
-		box-sizing: border-box;
+
+	}
+
+	.has-words {
+		max-width: 64rem;
+		display: flex;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		vertical-align: middle;
 	}
 
 </style>

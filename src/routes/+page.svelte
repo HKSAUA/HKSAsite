@@ -1,7 +1,20 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/gonna kms.png';
-	import welcome_fallback from '$lib/images/gonna kms.png';
+	import './styles.css';
+	import Divider from "./Divider.svelte";
+	import { onMount } from "svelte";
+	import FrontJoin from "./FrontJoin.svelte";
+
+	let frontHeaderFont = 350;
+	onMount(() => {
+		const updateFontSize = () => {
+			const width = window.innerWidth;
+			frontHeaderFont = Math.min(width / 10, 350);
+		}
+		window.addEventListener('resize', updateFontSize())
+		updateFontSize()
+	})
+
+	export let data;
 </script>
 
 <svelte:head>
@@ -9,61 +22,26 @@
 	<meta name="description" content="Hong Kong Students' Association" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
 
-		<strong>Hong Kong Students' Association</strong><br />
-	</h1>
-	<h2>
-		University of <a href="https://www.ualberta.ca/toolkit/trademarks-licensing/student-groups.html" target="_blank">[redacted cuz trademark regulations lol]</a>
-	</h2>
-	<p>This page isn't ready yet, but we're cooking, we promise!</p><br>
-	<p>In the meantime, visit us on <a href="https://www.instagram.com/hksaua/">Instagram</a>
-	or <a href="https://alberta.campuslabs.ca/engage/organization/hksaua">BearsDen</a>!</p>
 
-	<div class="navBar" style="margin:0">
-
-	</div>
+	<section><h1>
+		<span style="font-size: { frontHeaderFont }px">HKSAUA</span><br />
+	</h1></section>
+	<section>
+		<h2><strong>Hong Kong Students' Association</strong></h2>
+	</section>
 	<!--<Counter />-->
-	<div class="biggerNav" style="background-color: #cc3c29">
-		<div class="row">
-			help
-		</div>
-	</div>
-</section>
+	<section><Divider /></section>
 
+<FrontJoin />
 <style>
 	section {
 		display: flex;
-		flex-direction: column;
+
 		justify-content: center;
 		align-items: center;
-		flex: 0.6;
+		flex: 1;
+		margin: 0 auto;
 	}
 
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
 </style>
