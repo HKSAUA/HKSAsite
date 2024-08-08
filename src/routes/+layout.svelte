@@ -42,7 +42,7 @@
 
 	main {
 		flex: 1;
-		display: flex;
+		display: inline;
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
