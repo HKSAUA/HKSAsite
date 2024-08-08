@@ -1,20 +1,12 @@
 <script>
     import { onMount, onDestroy } from "svelte";
-    import { currentUser, pb } from "$lib/pocketbase.js";
-    export const prerender = true;
-    
-    let execs = [];
-    onMount(async () => {
-        const resultExecs = await pb.collection('executives').getList(1,50);
-        execs = resultExecs.items;
-        console.log("SKREEEEEE", execs);
-    })
 
+    export let data;
 </script>
 
 <div>
     <div class="row">
-        {#each execs as exec}
+        {#each data as exec}
         <div class="column">
             <div class="card">
                     <picture>
