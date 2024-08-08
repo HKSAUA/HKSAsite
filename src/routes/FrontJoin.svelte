@@ -6,8 +6,7 @@
     <div style="text-align: center; color: #FFFFFF; font-size: 36px; font-family: 'Integral CF Regular';">
         <strong>JOIN US</strong><br>
     </div>
-    
-    <p></p>
+    <p>Become a member today!</p>
 </div>
 <style>
     @font-face {
@@ -19,7 +18,7 @@
         url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
         url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
     }
-    h2 {
+    h2, p {
         text-align: center;
         color: #FFFFFF;
         

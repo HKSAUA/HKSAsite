@@ -37,6 +37,7 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		margin: 0 auto;
 	}
 
 	main {
@@ -52,7 +53,7 @@
 
 	.has-words {
 		max-width: 64rem;
-		display: flex;
+		display: inline;
 		margin: 0 auto;
 		justify-content: center;
 		align-items: center;
