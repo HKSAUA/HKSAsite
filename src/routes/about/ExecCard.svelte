@@ -1,12 +1,15 @@
 <script>
     import { onMount, onDestroy } from "svelte";
 
-    export let data;
+    export let executives;
+    onMount(() => {
+        console.log(executives)
+    })
 </script>
 
 <div>
     <div class="row">
-        {#each data as exec}
+        {#each executives as exec}
         <div class="column">
             <div class="card">
                     <picture>

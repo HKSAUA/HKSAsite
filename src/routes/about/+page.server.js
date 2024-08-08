@@ -1,11 +1,23 @@
+import { error, json } from "@sveltejs/kit"
 import { supabase } from "../../lib/supabaseClient";
 
-/** @type {import('./$types').PageServerLoad} */
-export async function load({  }) {
-    let { data: executives, error } = await supabase
-            .from('executives')
-            .select('*')
-	return {
-		data
-	};
+
+export async function load() {
+
+    try {
+        const { data, error } = await supabase
+        .from('executives')
+        .select('*');
+        console.log(data)
+        if (error) {
+            throw error
+        }
+        return { props: { executives: json(data) } };
+        
+    }
+    catch (err) {
+
+        console.error(err)
+        throw error;
+    }
 }

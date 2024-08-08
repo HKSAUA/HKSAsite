@@ -14,7 +14,6 @@
 		updateFontSize()
 	})
 
-	export let data;
 </script>
 
 <svelte:head>
@@ -33,7 +32,7 @@
 	<!--<Counter />-->
 	<section><Divider /></section>
 
-<FrontJoin />
+	<FrontJoin />
 <style>
 	section {
 		display: flex;
