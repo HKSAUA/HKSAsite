@@ -30,7 +30,6 @@
             </div>
         {/each}
     </div>
-
 </div>
 
 
