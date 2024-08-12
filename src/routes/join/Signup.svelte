@@ -8,7 +8,7 @@
     <p>you actually can now <br>it actually works with db now holy hell</p>
 
 
-        <form method="POST" on:submit|preventDefault>
+        <form method="POST">
             <input
                     placeholder="First Name"
                     type="text"

@@ -3,20 +3,27 @@ import {supabase} from "$lib/supabaseClient.js";
 /** @type {import('./$types').Actions} */
 export const actions = {
 	default: async (event) => {
-        const formData = await request.formData();
-
+        const data = await event.request.formData();
+        console.log(data);
+        try {
+            
+            const {downstreamData, error} = await supabase
+            .from('members')
+            .insert([
+                {
+                    first_name: data.get("fName"),
+                    last_name: data.get("lName"),
+                    email: data.get("email"),
+                    status: data.get("status")
+                }
+            ])
+            .select();
+        }
+        catch (error) {
+            console.log(error)
+        }
         // sending request to DB
-		const {data, error} = await supabase
-        .from('members')
-        .insert([
-            {
-                first_name: formData.get("fName"),
-                last_name: formData.get("lName"),
-                email: formData.get("email"),
-                status: formData.get("status")
-            }
-        ])
-        .select();
+		
         console.log("help")
 	}
 };
