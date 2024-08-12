@@ -4,9 +4,8 @@ import {supabase} from "$lib/supabaseClient.js";
 export const actions = {
 	default: async (event) => {
         const data = await event.request.formData();
-        console.log(data);
         try {
-            
+            // sending request to DB
             const {downstreamData, error} = await supabase
             .from('members')
             .insert([
@@ -22,8 +21,7 @@ export const actions = {
         catch (error) {
             console.log(error)
         }
-        // sending request to DB
-		
+        
         console.log("help")
 	}
 };
