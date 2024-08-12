@@ -7,9 +7,7 @@
     <h2>become a member</h2>
     <p>you actually can now <br>it actually works with db now holy hell</p>
 
-    {#if $currentUser}
-        <p>signed in as {currentUser.firstname}</p>
-        {:else}
+
         <form method="POST" on:submit|preventDefault>
             <input
                     placeholder="First Name"
@@ -33,8 +31,7 @@
                 <option value="Faculty">Faculty</option>
                 <option value="Alumni">Alumni</option>
             </select>
+            <button>Sign up</button>
         </form>
-        <button>Sign up</button>
-    {/if}
-    { statusMessage }
+        
 </div>

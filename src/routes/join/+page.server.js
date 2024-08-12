@@ -17,5 +17,6 @@ export const actions = {
             }
         ])
         .select();
+        console.log("help")
 	}
 };
