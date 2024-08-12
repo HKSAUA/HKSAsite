@@ -3,6 +3,7 @@
 	import Divider from "./Divider.svelte";
 	import { onMount } from "svelte";
 	import FrontJoin from "./FrontJoin.svelte";
+	import FrontInfo from './FrontInfo.svelte';
 
 	let frontHeaderFont = 350;
 	onMount(() => {
@@ -20,9 +21,6 @@
 	<title>HKSA</title>
 	<meta name="description" content="Hong Kong Students' Association" />
 </svelte:head>
-
-
-
 	<section><h1>
 		<span style="font-size: { frontHeaderFont }px">HKSAUA</span><br />
 	</h1></section>
@@ -33,6 +31,8 @@
 	<section><Divider /></section>
 
 	<FrontJoin />
+	<Divider />
+	<FrontInfo />
 <style>
 	section {
 		display: flex;
