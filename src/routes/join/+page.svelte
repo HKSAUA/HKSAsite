@@ -3,7 +3,7 @@
     import Modal from "$lib/Modal.svelte";
     import {currentUser} from "$lib/pocketbase.js";
     import Preview from "../Preview.svelte";
-
+    
     let showModal = false;
 </script>
 

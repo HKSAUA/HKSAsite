@@ -1,33 +1,6 @@
 <script>
-    import { currentUser, pb } from "$lib/pocketbase.js";
 
-    let firstName;
-    let lastName;
-    let email;
-    let status;
-    let password;
-    let passwordConfirm;
-    let statusMessage = "";
 
-    async function signUp() {
-        try {
-            const data = {
-                "firstname":firstName,
-                "lastname":lastName,
-                email,
-                status,
-                password,
-                passwordConfirm,
-
-            };
-            const createMember = await pb.collection("members").create(data);
-
-        } catch (error) {
-            console.log(error);
-            statusMessage = error;
-        }
-        console.log("User", firstName, lastName, "created")
-    }
 </script>
 
 <div class="Signup">
@@ -37,42 +10,31 @@
     {#if $currentUser}
         <p>signed in as {currentUser.firstname}</p>
         {:else}
-        <form on:submit|preventDefault>
+        <form method="POST" on:submit|preventDefault>
             <input
                     placeholder="First Name"
                     type="text"
-                    bind:value={firstName}
+                    name="fName"
             />
             <input
                     placeholder="Last Name"
                     type="text"
-                    bind:value={lastName}
+                    name="lName"
             /><br>
             <input
                     placeholder="Email"
                     type="text"
-                    bind:value={email}
+                    name="email"
             /><br>
-            <input
-                placeholder="Password"
-                type="password"
-                bind:value={password}
-            />
-            <input
-                    placeholder="Confirm password"
-                    type="password"
-                    bind:value={passwordConfirm}
-            />
             <label for="status">Status</label>
-            <select
-                bind:value={status}>
+            <select name="status">
                 <option value="Undergraduate">Undergraduate</option>
                 <option value="Graduate">Graduate</option>
                 <option value="Faculty">Faculty</option>
                 <option value="Alumni">Alumni</option>
             </select>
         </form>
-        <button on:click={signUp}>Sign up</button>
+        <button>Sign up</button>
     {/if}
     { statusMessage }
 </div>
