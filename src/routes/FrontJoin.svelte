@@ -18,10 +18,16 @@
         url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
         url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
     }
+    @font-face {
+        font-family: "Helvetical Neue";
+        src: url('src/lib/fonts/HelveticaNeueBlack.otf');
+    }
     h2, p {
         text-align: center;
         color: #FFFFFF;
-        
+        font-size: 36px;
+        font-family: 'Helvetical Neue';
+
     }
 
 </style>
