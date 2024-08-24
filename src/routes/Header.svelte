@@ -16,12 +16,6 @@
 			<li aria-current={$page.url.pathname === '/join' ? 'page' : undefined}>
 				<a href="/join">Join us</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/events' ? 'page' : undefined}>
-				<a href="/events">Events</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
 		</ul>
 
 	</nav>
