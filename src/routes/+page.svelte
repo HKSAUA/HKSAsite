@@ -22,7 +22,7 @@
 	<meta name="description" content="Hong Kong Students' Association" />
 </svelte:head>
 	<section><h1>
-		<span style="font-size: { frontHeaderFont }px">HKSAUA</span><br />
+		<span style="font-size: { frontHeaderFont }px"><span style="font-family: 'Integral CF Regular'">HKSAUA</span></span><br />
 	</h1></section>
 	<section>
 		<h2><strong>Hong Kong Students' Association</strong></h2>
@@ -35,6 +35,15 @@
 	<FrontInfo />
 <style>
 	section {
+		@font-face {
+			font-family: "Integral CF Regular";
+			src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot");
+			src: url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
+		}
 		display: flex;
 
 		justify-content: center;

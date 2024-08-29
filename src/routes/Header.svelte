@@ -57,6 +57,7 @@
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
 		font-size:24px;
+		padding-left:24px;
 	}
 
 	img {
