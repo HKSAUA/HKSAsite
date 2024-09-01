@@ -12,17 +12,20 @@
     <meta name="description" content="Join us" />
 </svelte:head>
 <body>
-<h1>Join us!</h1>
+<h1>Join us</h1>
 
-<Signup/>
+<div class="Signup">
+    <Signup/>
+
+</div>
 <Modal bind:showModal>
     <div class="usageDisclosure">
         <div>
             <h3>Why do we need this info?</h3>
             <p>
                 We are collecting names, email addresses, and statuses from people who wish to join HKSA
-                as per some SGS regulations that I don't wanna find right now. <br>
-                we will only be using this information for the purposes of recordkeeping. An exhaustive
+                as per SGS regulations. <br>
+                We will only be using this information for the purposes of recordkeeping. An exhaustive
                 list of functions is as follows:<br>
             </p>
             <ol>
@@ -43,3 +46,14 @@
 
 
 </body>
+
+<style>
+    .Signup {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex:1;
+    }
+</style>

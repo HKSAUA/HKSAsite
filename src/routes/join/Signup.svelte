@@ -5,7 +5,6 @@
 
 <div class="Signup">
     <h2>become a member</h2>
-    <p>you actually can now <br>it actually works with db now holy hell</p>
 
 
         <form method="POST">
@@ -33,5 +32,11 @@
             </select>
             <button>Sign up</button>
         </form>
-        
 </div>
+
+<style>
+    .Signup {
+        align-content: center;
+        padding:0px;
+    }
+</style>
