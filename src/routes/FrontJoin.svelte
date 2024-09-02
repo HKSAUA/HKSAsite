@@ -6,7 +6,8 @@
     <div style="text-align: center; color: #FFFFFF; font-size: 36px; font-family: 'Integral CF Regular';">
         <strong>JOIN US</strong><br>
     </div>
-    <p>Become a member today!</p>
+    <p>Become a member today!</p><br>
+    <a href="/join">Join now!</a>
 </div>
 <style>
     @font-face {
@@ -28,6 +29,28 @@
         font-size: 36px;
         font-family: 'Helvetical Neue';
 
+    }
+    button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 33px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        content-align: center;
+        text-align: center;
+        font-size: 36px;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-family: "Integral CF Regular";
+        background-color: #E6AD37
+    }
+    a {
+        font-size:36px;
+        content-align: center;
+        text-align: center;
+        margin:0 auto;
     }
 
 </style>
