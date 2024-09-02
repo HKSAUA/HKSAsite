@@ -4,9 +4,6 @@
     import {currentUser} from "$lib/pocketbase.js";
     import Preview from "../Preview.svelte";
     import FormPopup from "./FormPopup.svelte";
-    import { getContext} from "svelte";
-
-    const { formSuccess } = getContext('formSuccess');
     let showModal = false;
 </script>
 
@@ -19,6 +16,10 @@
 
 <div class="Signup">
     <Signup/>
+</div>
+<div style="text-align:center">
+    <p>Once you click "Sign up", you will be registered as a member. There is currently no message to say it (because
+        the dev team is sub-par), but we can guarantee its functionality. Thanks!</p>
 </div>
 <Modal bind:showModal>
     <div class="usageDisclosure">
