@@ -64,7 +64,7 @@
 		width: 10em;
 		height: 10em;
 		display: block;
-		position: fixed;
+		position: absolute;
 		top: 10px;
 		left: 10px
 	}

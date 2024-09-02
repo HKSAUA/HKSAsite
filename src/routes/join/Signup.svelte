@@ -22,7 +22,12 @@
                     placeholder="Email"
                     type="text"
                     name="email"
-            /><br>
+            />
+            <input
+                placeholder="Confirm Email"
+                type="text"
+                name="emailConfirmation"
+            ><br>
             <label for="status">Status</label>
             <select name="status">
                 <option value="Undergraduate">Undergraduate</option>

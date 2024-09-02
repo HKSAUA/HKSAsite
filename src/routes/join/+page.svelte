@@ -3,7 +3,10 @@
     import Modal from "$lib/Modal.svelte";
     import {currentUser} from "$lib/pocketbase.js";
     import Preview from "../Preview.svelte";
-    
+    import FormPopup from "./FormPopup.svelte";
+    import { getContext} from "svelte";
+
+    const { formSuccess } = getContext('formSuccess');
     let showModal = false;
 </script>
 
@@ -16,7 +19,6 @@
 
 <div class="Signup">
     <Signup/>
-
 </div>
 <Modal bind:showModal>
     <div class="usageDisclosure">
