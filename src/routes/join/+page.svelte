@@ -44,7 +44,6 @@
     </div>
 </Modal>
 <button on:click={() => (showModal = true)}><strong>Why do we need this info?</strong></button>
-<p>Already a member? <a href="/join">Join us here!</a></p>
 
 
 </body>

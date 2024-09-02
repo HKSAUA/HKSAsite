@@ -38,7 +38,7 @@ jobs:
           api_location: "./build/server" # Api source code path - optional
           output_location: "./build/static" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-          production_branch: "production"
+          production_branch: "login-page-temp"
       
 
   close_pull_request_job:
