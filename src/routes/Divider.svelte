@@ -15,7 +15,11 @@
 </script>
 
 <style>
-.section-divider {
+    @font-face {
+        font-family: "Helvetical Neue";
+        src: url('src/lib/fonts/HelveticaNeueBlack.otf');
+    }
+    .section-divider {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -30,6 +34,6 @@
 
 </style>
 
-<div class="section-divider">
-    <span style="font-size: {fontSize}px; color: #0F3446;"><strong>HKSAUA</strong></span>
+<div class="section-divider" style="font-family: 'Helvetical Neue'">
+    <span style="font-size: {fontSize}px; color: #0F3446;">HKSAUA</span>
 </div>

@@ -25,7 +25,7 @@
 		<span style="font-size: { frontHeaderFont }px"><span style="font-family: 'Integral CF Regular'">HKSAUA</span></span><br />
 	</h1></section>
 	<section>
-		<h2><strong>Hong Kong Students' Association</strong></h2>
+		<h2 style="font-family: 'Helvetical Neue'">Hong Kong Students' Association</h2>
 	</section>
 	<!--<Counter />-->
 	<section><Divider /></section>

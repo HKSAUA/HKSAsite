@@ -7,7 +7,7 @@
         <strong>JOIN US</strong><br>
     </div>
     <p>Become a member today!</p><br>
-    <a href="/join">Join now!</a>
+    <p><button><a href="/join">Join now!</a></button></p>
 </div>
 <style>
     @font-face {

@@ -4,7 +4,7 @@
 </script>
 
 <div class="Signup">
-    <h2>become a member</h2>
+    <h2 style="font-family: 'Helvetical Neue'">become a member</h2>
 
 
         <form method="POST">
@@ -40,6 +40,10 @@
 </div>
 
 <style>
+    @font-face {
+        font-family: "Helvetical Neue";
+        src: url('src/lib/fonts/HelveticaNeueBlack.otf');
+    }
     .Signup {
         align-content: center;
         padding:0px;
