@@ -4,7 +4,19 @@
     import {currentUser} from "$lib/pocketbase.js";
     import Preview from "../Preview.svelte";
     import FormPopup from "./FormPopup.svelte";
+    import { onMount } from "svelte";
+
     let showModal = false;
+
+    let frontHeaderFont = 350;
+    onMount(() => {
+        const updateFontSize = () => {
+            const width = window.innerWidth;
+            frontHeaderFont = Math.min(width / 10, 350);
+        }
+        window.addEventListener('resize', updateFontSize())
+        updateFontSize()
+    })
 </script>
 
 <svelte:head>
@@ -12,7 +24,7 @@
     <meta name="description" content="Join us" />
 </svelte:head>
 <body>
-<h1>Join us</h1>
+<span style="font-size: { frontHeaderFont }px"><h1>Join us</h1></span><br />
 
 <div class="Signup">
     <Signup/>
@@ -57,5 +69,6 @@
         justify-content: center;
         align-items: center;
         flex:1;
+
     }
 </style>
