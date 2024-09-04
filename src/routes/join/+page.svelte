@@ -24,7 +24,9 @@
     <meta name="description" content="Join us" />
 </svelte:head>
 <body>
-<span style="font-size: { frontHeaderFont }px"><h1>Join us</h1></span><br />
+<div class="JoinHeader">
+    <span style="font-size: { frontHeaderFont }px">Join us</span><br />
+</div>
 
 <div class="Signup">
     <Signup/>
@@ -70,5 +72,10 @@
         align-items: center;
         flex:1;
 
+    }
+    .JoinHeader {
+        font-family: "Kelsi 1", sans-serif;
+        text-align: center;
+        color:#0F3446
     }
 </style>
