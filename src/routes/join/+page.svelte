@@ -12,7 +12,7 @@
     onMount(() => {
         const updateFontSize = () => {
             const width = window.innerWidth;
-            frontHeaderFont = Math.min(width / 10, 350);
+            frontHeaderFont = Math.min(width / 10, 79);
         }
         window.addEventListener('resize', updateFontSize())
         updateFontSize()
