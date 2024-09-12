@@ -1,7 +1,6 @@
 <script>
 	import ExecCard from "./ExecCard.svelte";
 
-	import Preview from "../Preview.svelte";
 </script>
 
 <svelte:head>
@@ -13,7 +12,7 @@
 
 <body>
 	<div class="text-column" style="text-align:center">
-		<h1>About HKSA (wip lol)</h1>
+		<h1>About Us</h1>
 
 		<p>
 			The Hong Kong Students' Association at the University of Alberta (HKSAUA) provides a vibrant community for students across campus.

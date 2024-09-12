@@ -1,23 +1,22 @@
 <script>
-    import { onMount, onDestroy } from "svelte";
-
-    export let executives;
-    onMount(() => {
-        console.log(executives)
+    import { onMount } from "svelte";
+    import data from "./data.json"
+    onMount(async () => {
+        data = await response.json();
     })
 </script>
 
 <div>
     <div class="row">
-        {#each executives as exec}
+        {#each data as exec}
         <div class="column">
             <div class="card">
                     <picture>
                         <source
-                            srcset={"https://hksa-site.pockethost.io/api/files/executives/" + exec.id + "/" + exec.image}
+                            srcset={"/static/execAssets/" + exec.name + ".png"}
                             type="image/png"/>
                         <img
-                            src={"https://hksa-site.pockethost.io/api/files/executives/" + exec.id + "/" + exec.image}
+                            src={"/static/execAssets/" + exec.name + ".png"}
                             alt={exec.name}
                             style="width:100%"/>
                     </picture>
