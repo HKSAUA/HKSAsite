@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import dataResponse from "./data.json"
-    let data;
+    let data = [];
     onMount(async () => {
         data = await dataResponse.json();
     })
