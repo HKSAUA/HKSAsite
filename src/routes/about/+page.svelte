@@ -29,3 +29,8 @@
 
 </body>
 
+<style>
+	p {
+		font-family: "Arial";
+	}
+</style>
