@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import data from "./data.json"
     onMount(async () => {
-        data = await response.json();
+        data = await data.json();
     })
 </script>
 
