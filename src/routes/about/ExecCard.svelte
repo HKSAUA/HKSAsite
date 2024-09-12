@@ -1,15 +1,10 @@
 <script>
-    import { onMount } from "svelte";
-    import dataResponse from "./data.json"
-    let data = [];
-    onMount(async () => {
-        data = await dataResponse.json();
-    })
+    import execData from "./data.json"
 </script>
 
 <div>
     <div class="row">
-        {#each data as exec}
+        {#each execData as exec}
         <div class="column">
             <div class="card">
                     <picture>
