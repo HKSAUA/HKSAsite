@@ -13,10 +13,10 @@
             <div class="card">
                     <picture>
                         <source
-                            srcset={"/static/execAssets/" + exec.name + ".png"}
+                            srcset={"/execAssets/" + exec.name + ".png"}
                             type="image/png"/>
                         <img
-                            src={"/static/execAssets/" + exec.name + ".png"}
+                            src={"/execAssets/" + exec.name + ".png"}
                             alt={exec.name}
                             style="width:100%"/>
                     </picture>
