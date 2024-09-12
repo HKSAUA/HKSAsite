@@ -10,13 +10,14 @@ export const actions = {
                 throw new Error("Emails must match.")
             }
             const {downstreamData, error} = await supabase
-            .from('members')
+            .from('people')
             .insert([
                 {
                     first_name: data.get("fName"),
                     last_name: data.get("lName"),
                     email: data.get("email"),
-                    status: data.get("status")
+                    status: data.get("status"),
+                    is_member:1
                 }
             ])
             .select();
